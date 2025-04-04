@@ -21,13 +21,17 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px; /* Reduced padding to bring content closer to the top */
             text-align: center;
+            position: relative; /* For positioning the logo */
         }
 
         .logo {
-            width: 150px;
-            margin-bottom: 20px;
+            width: 100px; /* Reduced size */
+            position: absolute; /* Position in top-left */
+            top: 20px;
+            left: 20px;
+            margin-bottom: 0; /* Remove margin-bottom since we're using absolute positioning */
         }
 
         h1 {
@@ -68,7 +72,7 @@
         }
 
         .cta {
-            background: #00897b; /* Brighter teal for CTA */
+            background: #00897b;
             color: #fff;
             padding: 15px 30px;
             border-radius: 25px;
@@ -80,13 +84,13 @@
         }
 
         .cta:hover {
-            background: #00695c; /* Darker teal on hover */
+            background: #00695c;
         }
 
         .question {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #ff7043; /* Warm orange for the question */
+            color: #ff7043;
             margin: 20px 0;
         }
 
@@ -112,7 +116,7 @@
 
         .plan-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(255, 112, 67, 0.3); /* Orange shadow on hover */
+            box-shadow: 0 5px 15px rgba(255, 112, 67, 0.3);
         }
 
         .plan-card h3 {
@@ -130,6 +134,11 @@
             margin-top: 40px;
             font-size: 0.9rem;
             color: #555;
+        }
+
+        footer h1 {
+            font-size: 1.5rem; /* Reduced size for footer heading */
+            color: #00695c;
         }
 
         .plans::-webkit-scrollbar {
@@ -162,6 +171,12 @@
                 width: 200px;
                 margin: 0 5px;
             }
+
+            .logo {
+                width: 80px; /* Even smaller on mobile */
+                top: 10px;
+                left: 10px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -169,7 +184,7 @@
 <body>
     <div class="container">
         <!-- Logo -->
-        <img src="https://raw.githubusercontent.com/Finams/forsure/main/FS.png" alt="Forsure Logo" width="250">
+        <img src="https://raw.githubusercontent.com/Finams/forsure/main/FS.png" alt="Forsure Logo" class="logo">
 
         <!-- Main Heading -->
         <h1>Together, We Grow!</h1>
@@ -177,10 +192,10 @@
         <!-- Letter Section -->
         <div class="letter">
             <h2>Dear Friend,</h2>
-            <p>I am Krishna, a first-generation entrepreneur, who left a high-paying IT job to chase my dream of building a business that empowers people. But as reality set in, I realized that <B>bootstrapped capital wasn’t enough to sustain growth.</B></p>
-            <p>Determined to keep my vision alive, I have begun side-gigging—leveraging mine and my employees' skills to bridge the gap. To fund the next phase before VC backing, <B>I have turned to insurance as a service—ensuring stability while keeping my dream afloat.</B></p>
-            <p><B>Life and business are like sailing a ship in unpredictable waters.</B> <br>Some days, the sea is calm, and progress feels effortless. But when the storm hits—unexpected expenses, a health crisis, or market downturns—those without a lifeboat are left struggling to stay afloat.</p>
-            <p><B>A well-planned backup, like insurance, isn't just an option—it’s the safety net that keeps both dreams and loved ones secure.</B></p>
+            <p>I am Krishna, a first-generation entrepreneur, who left a high-paying IT job to chase my dream of building a business that empowers people. But as reality set in, I realized that <b>bootstrapped capital wasn’t enough to sustain growth.</b></p>
+            <p>Determined to keep my vision alive, I have begun side-gigging—leveraging mine and my employees' skills to bridge the gap. To fund the next phase before VC backing, <b>I have turned to insurance as a service—ensuring stability while keeping my dream afloat.</b></p>
+            <p><b>Life and business are like sailing a ship in unpredictable waters.</b> <br>Some days, the sea is calm, and progress feels effortless. But when the storm hits—unexpected expenses, a health crisis, or market downturns—those without a lifeboat are left struggling to stay afloat.</p>
+            <p><b>A well-planned backup, like insurance, isn't just an option—it’s the safety net that keeps both dreams and loved ones secure.</b></p>
             <p>And here’s the best part—by securing your future with an insurance or investment plan through me, you’re not just protecting yourself. You’re also supporting an entrepreneur’s journey, helping a dream stay alive, and empowering a vision to thrive.</p>
             <p class="signature">- Krishna!</p>
         </div>
@@ -196,19 +211,19 @@
         <div class="plans">
             <div class="plan-card">
                 <h3>Peace of Money</h3>
-                <p><B>Term Insurance </B><br> "Because your love lasts forever, your protection should too."</p>
+                <p><b>Term Insurance </b><br> "Because your love lasts forever, your protection should too."</p>
             </div>
             <div class="plan-card">
                 <h3>Wings to Dreams</h3>
-                <p><B>Child Education Plans </B><br>"Give your child a future without limits."</p>
+                <p><b>Child Education Plans </b><br>"Give your child a future without limits."</p>
             </div>
             <div class="plan-card">
                 <h3>Prosperity Shield </h3>
-                <p><b>Unit Linked Insurance </B><br>"Grow your wealth, protect your future—all in one."</p>
+                <p><b>Unit Linked Insurance </b><br>"Grow your wealth, protect your future—all in one."</p>
             </div>
             <div class="plan-card">
                 <h3>Life’s Pay Raise</h3>
-                <p><B>Guaranteed Income </B><br>"A salary that never retires, just like your dreams."</p>
+                <p><b>Guaranteed Income </b><br>"A salary that never retires, just like your dreams."</p>
             </div>
         </div>
 
