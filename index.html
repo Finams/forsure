@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to ForSure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together, We Grow! - Secure Your Future</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00695c;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .letter {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .letter h2 {
+            font-size: 1.8rem;
+            color: #00695c;
+            margin-bottom: 15px;
+        }
+
+        .letter p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .signature {
+            font-style: italic;
+            color: #00695c;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .cta {
+            background: #00897b; /* Brighter teal for CTA */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin: 20px 0;
+            transition: background 0.3s ease;
+        }
+
+        .cta:hover {
+            background: #00695c; /* Darker teal on hover */
+        }
+
+        .question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff7043; /* Warm orange for the question */
+            margin: 20px 0;
+        }
+
+        .plans {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        .plan-card {
+            background: #fff;
+            width: 220px;
+            flex: 0 0 auto;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 112, 67, 0.3); /* Orange shadow on hover */
+        }
+
+        .plan-card h3 {
+            font-size: 1.2rem;
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+
+        .plan-card p {
+            font-size: 0.95rem;
+            color: #777;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .plans::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .plans::-webkit-scrollbar-thumb {
+            background: #00695c;
+            border-radius: 10px;
+        }
+
+        .plans::-webkit-scrollbar-track {
+            background: #e0f7fa;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .letter h2 {
+                font-size: 1.5rem;
+            }
+
+            .letter p {
+                font-size: 1rem;
+            }
+
+            .plan-card {
+                width: 200px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my first website hosted for free using GitHub Pages and GoDaddy domain.</p>
+    <div class="container">
+        <!-- Logo -->
+        <img src="https://i.ibb.co/5Y2kLqN/logo.png" alt="Logo" class="logo">
+
+        <!-- Main Heading -->
+        <h1>Together, We Grow!</h1>
+
+        <!-- Letter Section -->
+        <div class="letter">
+            <h2>Dear Friend,</h2>
+            <p>I am Krishna, a first-generation entrepreneur, who left a high-paying IT job to chase my dream of building a business that empowers people. But as reality set in, I realized that <B>bootstrapped capital wasn’t enough to sustain growth.</B></p>
+            <p>Determined to keep my vision alive, I have begun side-gigging—leveraging mine and my employees' skills to bridge the gap. To fund the next phase before VC backing, <B>I have turned to insurance as a service—ensuring stability while keeping my dream afloat.</B></p>
+            <p><B>Life and business are like sailing a ship in unpredictable waters.</B> <br>Some days, the sea is calm, and progress feels effortless. But when the storm hits—unexpected expenses, a health crisis, or market downturns—those without a lifeboat are left struggling to stay afloat.</p>
+            <p><B>A well-planned backup, like insurance, isn't just an option—it’s the safety net that keeps both dreams and loved ones secure.</B></p>
+            <p>And here’s the best part—by securing your future with an insurance or investment plan through me, you’re not just protecting yourself. You’re also supporting an entrepreneur’s journey, helping a dream stay alive, and empowering a vision to thrive.</p>
+            <p class="signature">- Krishna!</p>
+        </div>
+
+        <!-- Call-to-Action Question -->
+        <div class="question">What’s your lifeboat when the tides turn?</div>
+
+        <!-- Survey CTA -->
+        <p>Please take this following survey to understand your <strong>financial stability score!</strong></p>
+        <a href="https://forms.gle/BfVfW26E7rJrhvap9" class="cta" target="_blank">Take the Survey Now!</a>
+
+        <!-- Plans Section -->
+        <div class="plans">
+            <div class="plan-card">
+                <h3>Peace of Money</h3>
+                <p><B>Term Insurance </B><br> "Because your love lasts forever, your protection should too."</p>
+            </div>
+            <div class="plan-card">
+                <h3>Wings to Dreams</h3>
+                <p><B>Child Education Plans </B><br>"Give your child a future without limits."</p>
+            </div>
+            <div class="plan-card">
+                <h3>Prosperity Shield </h3>
+                <p><b>Unit Linked Insurance </B><br>"Grow your wealth, protect your future—all in one."</p>
+            </div>
+            <div class="plan-card">
+                <h3>Life’s Pay Raise</h3>
+                <p><B>Guaranteed Income </B><br>"A salary that never retires, just like your dreams."</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p><h1>It’s time to think ahead! Secure your future today. Act Now! - Call me @ 6385810293</h1></p>
+        </footer>
+    </div>
 </body>
 </html>
