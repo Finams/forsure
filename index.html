@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Together, We Grow! - Secure Your Future</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/5Y2kLqN/favicon-32x32.png">
     <style>
         * {
             margin: 0;
@@ -21,17 +23,17 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px; /* Reduced padding to bring content closer to the top */
+            padding: 20px;
             text-align: center;
-            position: relative; /* For positioning the logo */
+            position: relative;
         }
 
         .logo {
-            width: 100px; /* Reduced size */
-            position: absolute; /* Position in top-left */
+            width: 100px;
+            position: absolute;
             top: 20px;
             left: 20px;
-            margin-bottom: 0; /* Remove margin-bottom since we're using absolute positioning */
+            margin-bottom: 0;
         }
 
         h1 {
@@ -137,8 +139,32 @@
         }
 
         footer h1 {
-            font-size: 1.5rem; /* Reduced size for footer heading */
+            font-size: 1.5rem;
             color: #00695c;
+            display: inline; /* Keep the h1 inline with the span */
+        }
+
+        .urgent-text {
+            color: #d32f2f; /* Bright red for urgency */
+            font-weight: bold;
+            animation: pulse 1.5s infinite; /* Pulsing animation */
+            display: inline; /* Keep it inline with the h1 */
+        }
+
+        /* Pulsing animation for urgency */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .plans::-webkit-scrollbar {
@@ -173,9 +199,17 @@
             }
 
             .logo {
-                width: 80px; /* Even smaller on mobile */
+                width: 80px;
                 top: 10px;
                 left: 10px;
+            }
+
+            footer h1 {
+                font-size: 1.2rem;
+            }
+
+            .urgent-text {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -229,7 +263,9 @@
 
         <!-- Footer -->
         <footer>
-            <p><h1>It’s time to think ahead! Secure your future today. <br> Act Now! - Call us @ 6385810293</h1></p>
+            <p>
+                <h1>It’s time to think ahead! Secure your future today. <span class="urgent-text">Act Now! - Call me @ 6385810293</span></h1>
+            </p>
         </footer>
     </div>
 </body>
